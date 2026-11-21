@@ -38,7 +38,7 @@ We answer three questions:
 
 | Source | Content | Access |
 |---|---|---|
-| [Global Integrated Power Tracker](https://globalenergymonitor.org/projects/global-integrated-power-tracker/), Global Energy Monitor (August 2026) | ~180,000 power units: capacity, technology, country, status, owners | CC BY 4.0, mirrored on SSP Cloud storage |
+| [Global Integrated Power Tracker](https://globalenergymonitor.org/projects/global-integrated-power-tracker/), Global Energy Monitor (September 2026, V2) | 183,404 power units: capacity, technology, country, status, owners | CC BY 4.0, mirrored on SSP Cloud storage |
 | [World Bank API] *(optional)* | Income group, regulatory quality by country | Public API |
 
 The raw file is downloaded from Global Energy Monitor through a form, so it
