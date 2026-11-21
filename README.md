@@ -87,5 +87,4 @@ storage; the notebook reads it from there.
 
 ## Data attribution
 
-Global Energy Monitor, Global Integrated Power Tracker, August 2026 release,
-licensed under CC BY 4.0.
+Global Energy Monitor, Global Integrated Power Tracker, September 2026 release (V2), licensed under CC BY 4.0.
