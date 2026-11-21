@@ -71,9 +71,41 @@ REST_OF_MIDDLE_EAST = [
 ]
 
 # Readable labels for GEM technology types.
+# Readable labels for GEM technology types.
 TECHNOLOGY_LABELS = {
     "utility-scale solar": "Solar",
     "wind": "Wind",
     "oil/gas": "Gas & oil",
     "coal": "Coal",
     "hydropower": "Hydropower",
+    "nuclear": "Nuclear",
+    "bioenergy": "Bioenergy",
+    "geothermal": "Geothermal",
+}
+
+# Country names used by GEM that differ from the reference ISO table.
+COUNTRY_NAME_FIXES = {
+    "Antigua and Barbuda": "ATG",
+    "Bonaire, Sint Eustatius, and Saba": "BES",
+    "Bosnia and Herzegovina": "BIH",
+    "Cabo Verde": "CPV",
+    "Czech Republic": "CZE",
+    "Côte d'Ivoire": "CIV",
+    "DR Congo": "COD",
+    "Kosovo": "XKX",  # World Bank code; Kosovo has no ISO 3166 code
+    "Republic of the Congo": "COG",
+    "Saint Helena, Ascension, and Tristan da Cunha": "SHN",
+    "Saint Kitts and Nevis": "KNA",
+    "Saint Lucia": "LCA",
+    "Saint Pierre and Miquelon": "SPM",
+    "Saint Vincent and the Grenadines": "VCT",
+    "Sao Tome and Principe": "STP",
+    "The Gambia": "GMB",
+    "Trinidad and Tobago": "TTO",
+    "United Kingdom": "GBR",
+    "United States": "USA",
+    "Virgin Islands (U.S.)": "VIR",
+}
+
+# World Bank indicators. The Worldwide Governance Indicators changed codes in
+# their 2024 revision, so several candidate codes are tried in order.
