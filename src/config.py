@@ -71,7 +71,6 @@ REST_OF_MIDDLE_EAST = [
 ]
 
 # Readable labels for GEM technology types.
-# Readable labels for GEM technology types.
 TECHNOLOGY_LABELS = {
     "utility-scale solar": "Solar",
     "wind": "Wind",
