@@ -109,3 +109,16 @@ COUNTRY_NAME_FIXES = {
 
 # World Bank indicators. The Worldwide Governance Indicators changed codes in
 # their 2024 revision, so several candidate codes are tried in order.
+WB_INDICATORS = {
+    "regulatory_quality": {
+        "codes": ["GOV_WGI_RQ.EST", "RQ.EST"],
+        "source": 3,
+    },
+    "gdp_per_capita": {
+        "codes": ["NY.GDP.PCAP.CD"],
+        "source": 2,
+    },
+}
+WB_YEARS = (2015, 2025)
+
+RANDOM_SEED = 2026
