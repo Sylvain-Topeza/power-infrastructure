@@ -27,3 +27,53 @@ FIGURES_DIR = ROOT / "figures"
 GEM_FILE_NAME = "Global Integrated Power September 2026 V2.xlsx"
 GEM_SHEET = "Power facilities"
 # SSP Cloud username of the group member who hosts the data (see README).
+S3_BUCKET = os.environ.get("PDR_S3_BUCKET", "maximerolland")
+GEM_URL = (
+    f"https://minio.lab.sspcloud.fr/{S3_BUCKET}/diffusion/power-projects/{GEM_FILE_NAME}"
+)
+
+# Secondary sources
+COUNTRY_CODES_URL = (
+    "https://raw.githubusercontent.com/datasets/country-codes/main/data/country-codes.csv"
+)
+WORLD_BANK_API = "https://api.worldbank.org/v2"
+WORLD_BANK_SNAPSHOT = DATA_DIR / "worldbank_snapshot.csv"
+SPONSORS_FILE = DATA_DIR / "sponsors.csv"
+
+# --------------------------------------------------------------------------
+# Definitions
+# --------------------------------------------------------------------------
+# GEM statuses grouped into the four stages of a project's life.
+STATUS_TO_STAGE = {
+    "announced": "pipeline",
+    "pre-construction": "pipeline",
+    "construction": "construction",
+    "operating": "operating",
+    "cancelled": "abandoned",
+    "cancelled - inferred 4 y": "abandoned",
+    "shelved": "abandoned",
+    "shelved - inferred 2 y": "abandoned",
+    "mothballed": "other",
+    "retired": "other",
+}
+# Statuses that GEM infers from the absence of news (used in robustness checks).
+INFERRED_STATUSES = {"cancelled - inferred 4 y", "shelved - inferred 2 y"}
+
+# A project "reached an outcome" if it was abandoned, is under construction,
+# or entered operation in or after this year (see the notebook, section 2.4).
+COHORT_START_YEAR = 2010
+
+# Regional groupings used throughout the report.
+GCC = ["Bahrain", "Kuwait", "Oman", "Qatar", "Saudi Arabia", "United Arab Emirates"]
+REST_OF_MIDDLE_EAST = [
+    "Egypt", "Iran", "Iraq", "Israel", "Jordan", "Lebanon",
+    "Palestine", "Syria", "Yemen",
+]
+
+# Readable labels for GEM technology types.
+TECHNOLOGY_LABELS = {
+    "utility-scale solar": "Solar",
+    "wind": "Wind",
+    "oil/gas": "Gas & oil",
+    "coal": "Coal",
+    "hydropower": "Hydropower",
