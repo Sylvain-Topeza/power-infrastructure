@@ -26,7 +26,7 @@ We answer three questions:
 
 ## Key findings (preliminary)
 
-- [X]% of the capacity that reached a final outcome since 2010 was abandoned
+- [X]% of the capacity that progressed past the pipeline stage since 2010 was abandoned
   rather than built; rates range from [20]% for solar to [75]% for nuclear.
 - In Gulf countries, almost no announced project is abandoned ([~3]% in Saudi
   Arabia), against [56]% in India and [69]% in Greece.
