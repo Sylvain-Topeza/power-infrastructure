@@ -1,0 +1,218 @@
+iso3,wb_name,wb_region,income_group,regulatory_quality_year,regulatory_quality,regulatory_quality_code,gdp_per_capita_year,gdp_per_capita,gdp_per_capita_code
+ABW,Aruba,Latin America & Caribbean ,High income,2025.0,0.9747879,GOV_WGI_RQ.EST,2024.0,38590.5650288641,NY.GDP.PCAP.CD
+AFG,Afghanistan,"Middle East, North Africa, Afghanistan & Pakistan",Low income,2025.0,-1.4368826,GOV_WGI_RQ.EST,2024.0,416.871146273728,NY.GDP.PCAP.CD
+AGO,Angola,Sub-Saharan Africa ,Lower middle income,2025.0,-0.7438836,GOV_WGI_RQ.EST,2025.0,3129.47662331063,NY.GDP.PCAP.CD
+ALB,Albania,Europe & Central Asia,Upper middle income,2025.0,0.3002646,GOV_WGI_RQ.EST,2025.0,12998.147869552,NY.GDP.PCAP.CD
+AND,Andorra,Europe & Central Asia,High income,2025.0,0.8500879,GOV_WGI_RQ.EST,2025.0,54291.5026031052,NY.GDP.PCAP.CD
+ARE,United Arab Emirates,"Middle East, North Africa, Afghanistan & Pakistan",High income,2025.0,1.1742823,GOV_WGI_RQ.EST,2024.0,50273.5126243239,NY.GDP.PCAP.CD
+ARG,Argentina,Latin America & Caribbean ,Upper middle income,2025.0,-0.093359,GOV_WGI_RQ.EST,2025.0,14898.0885943842,NY.GDP.PCAP.CD
+ARM,Armenia,Europe & Central Asia,Upper middle income,2025.0,0.2177027,GOV_WGI_RQ.EST,2025.0,9474.01849300368,NY.GDP.PCAP.CD
+ASM,American Samoa,East Asia & Pacific,High income,2025.0,0.3744982,GOV_WGI_RQ.EST,2022.0,18017.4589383973,NY.GDP.PCAP.CD
+ATG,Antigua and Barbuda,Latin America & Caribbean ,High income,2025.0,0.6199752,GOV_WGI_RQ.EST,2025.0,24819.2454680158,NY.GDP.PCAP.CD
+AUS,Australia,East Asia & Pacific,High income,2025.0,1.6689879,GOV_WGI_RQ.EST,2025.0,65129.7227990563,NY.GDP.PCAP.CD
+AUT,Austria,Europe & Central Asia,High income,2025.0,1.0670937,GOV_WGI_RQ.EST,2025.0,62930.0351324599,NY.GDP.PCAP.CD
+AZE,Azerbaijan,Europe & Central Asia,Upper middle income,2025.0,0.0512163,GOV_WGI_RQ.EST,2025.0,7410.72281660142,NY.GDP.PCAP.CD
+BDI,Burundi,Sub-Saharan Africa ,Low income,2025.0,-0.8680546,GOV_WGI_RQ.EST,2025.0,233.823013385395,NY.GDP.PCAP.CD
+BEL,Belgium,Europe & Central Asia,High income,2025.0,1.210624,GOV_WGI_RQ.EST,2025.0,60750.2735864647,NY.GDP.PCAP.CD
+BEN,Benin,Sub-Saharan Africa ,Lower middle income,2025.0,-0.2962958,GOV_WGI_RQ.EST,2025.0,1658.27312662991,NY.GDP.PCAP.CD
+BFA,Burkina Faso,Sub-Saharan Africa ,Low income,2025.0,-0.6313341,GOV_WGI_RQ.EST,2025.0,1147.57131635601,NY.GDP.PCAP.CD
+BGD,Bangladesh,South Asia,Lower middle income,2025.0,-0.9378502,GOV_WGI_RQ.EST,2025.0,2597.34352335275,NY.GDP.PCAP.CD
+BGR,Bulgaria,Europe & Central Asia,High income,2025.0,0.3391942,GOV_WGI_RQ.EST,2025.0,20328.1667065538,NY.GDP.PCAP.CD
+BHR,Bahrain,"Middle East, North Africa, Afghanistan & Pakistan",High income,2025.0,1.0026521,GOV_WGI_RQ.EST,2025.0,30596.5794898885,NY.GDP.PCAP.CD
+BHS,"Bahamas, The",Latin America & Caribbean ,High income,2025.0,-0.0883696,GOV_WGI_RQ.EST,2024.0,39455.4466548546,NY.GDP.PCAP.CD
+BIH,Bosnia and Herzegovina,Europe & Central Asia,Upper middle income,2025.0,-0.4036602,GOV_WGI_RQ.EST,2025.0,10381.8460703874,NY.GDP.PCAP.CD
+BLR,Belarus,Europe & Central Asia,Upper middle income,2025.0,-1.2591337,GOV_WGI_RQ.EST,2025.0,10279.2547190723,NY.GDP.PCAP.CD
+BLZ,Belize,Latin America & Caribbean ,Upper middle income,2025.0,-0.5470506,GOV_WGI_RQ.EST,2025.0,7865.47937690933,NY.GDP.PCAP.CD
+BMU,Bermuda,North America,High income,2025.0,0.6122928,GOV_WGI_RQ.EST,2024.0,142250.433195123,NY.GDP.PCAP.CD
+BOL,Bolivia,Latin America & Caribbean ,Lower middle income,2025.0,-1.2220929,GOV_WGI_RQ.EST,2025.0,5147.81081955367,NY.GDP.PCAP.CD
+BRA,Brazil,Latin America & Caribbean ,Upper middle income,2025.0,-0.44189,GOV_WGI_RQ.EST,2025.0,10713.2856869511,NY.GDP.PCAP.CD
+BRB,Barbados,Latin America & Caribbean ,High income,2025.0,0.3939678,GOV_WGI_RQ.EST,2025.0,28364.8181499736,NY.GDP.PCAP.CD
+BRN,Brunei Darussalam,East Asia & Pacific,High income,2025.0,0.9630214,GOV_WGI_RQ.EST,2025.0,32234.6428368582,NY.GDP.PCAP.CD
+BTN,Bhutan,South Asia,Lower middle income,2025.0,-0.0933992,GOV_WGI_RQ.EST,2025.0,4492.78400306618,NY.GDP.PCAP.CD
+BWA,Botswana,Sub-Saharan Africa ,Upper middle income,2025.0,0.3542798,GOV_WGI_RQ.EST,2025.0,7778.1151090571,NY.GDP.PCAP.CD
+CAF,Central African Republic,Sub-Saharan Africa ,Low income,2025.0,-1.3080309,GOV_WGI_RQ.EST,2025.0,556.131398031455,NY.GDP.PCAP.CD
+CAN,Canada,North America,High income,2025.0,1.4406381,GOV_WGI_RQ.EST,2025.0,55697.6639660837,NY.GDP.PCAP.CD
+CHE,Switzerland,Europe & Central Asia,High income,2025.0,1.6835424,GOV_WGI_RQ.EST,2025.0,114769.012314293,NY.GDP.PCAP.CD
+CHI,Channel Islands,Europe & Central Asia,High income,,,,2023.0,74585.5224096294,NY.GDP.PCAP.CD
+CHL,Chile,Latin America & Caribbean ,High income,2025.0,0.6359222,GOV_WGI_RQ.EST,2025.0,17994.5911957485,NY.GDP.PCAP.CD
+CHN,China,East Asia & Pacific,Upper middle income,2025.0,-0.1107931,GOV_WGI_RQ.EST,2025.0,13861.970224368,NY.GDP.PCAP.CD
+CIV,Cote d'Ivoire,Sub-Saharan Africa ,Lower middle income,2025.0,-0.1670207,GOV_WGI_RQ.EST,2025.0,3050.10202257321,NY.GDP.PCAP.CD
+CMR,Cameroon,Sub-Saharan Africa ,Lower middle income,2025.0,-0.7869179,GOV_WGI_RQ.EST,2025.0,1972.3815800786,NY.GDP.PCAP.CD
+COD,"Congo, Dem. Rep.",Sub-Saharan Africa ,Low income,2025.0,-1.3099085,GOV_WGI_RQ.EST,2025.0,806.776000708534,NY.GDP.PCAP.CD
+COG,"Congo, Rep.",Sub-Saharan Africa ,Lower middle income,2025.0,-1.1967667,GOV_WGI_RQ.EST,2025.0,2514.73393584747,NY.GDP.PCAP.CD
+COL,Colombia,Latin America & Caribbean ,Upper middle income,2025.0,-0.1973526,GOV_WGI_RQ.EST,2025.0,8561.62091854449,NY.GDP.PCAP.CD
+COM,Comoros,Sub-Saharan Africa ,Lower middle income,2025.0,-1.1442017,GOV_WGI_RQ.EST,2025.0,2055.75921566281,NY.GDP.PCAP.CD
+CPV,Cabo Verde,Sub-Saharan Africa ,Upper middle income,2025.0,0.0080803,GOV_WGI_RQ.EST,2025.0,5796.47207860911,NY.GDP.PCAP.CD
+CRI,Costa Rica,Latin America & Caribbean ,High income,2025.0,0.5381328,GOV_WGI_RQ.EST,2025.0,19970.0989059622,NY.GDP.PCAP.CD
+CUB,Cuba,Latin America & Caribbean ,Upper middle income,2025.0,-1.5775389,GOV_WGI_RQ.EST,2020.0,9605.27914559614,NY.GDP.PCAP.CD
+CUW,Curacao,Latin America & Caribbean ,High income,,,,2024.0,22832.895498987,NY.GDP.PCAP.CD
+CYM,Cayman Islands,Latin America & Caribbean ,High income,2025.0,0.6726715,GOV_WGI_RQ.EST,2024.0,104292.900672109,NY.GDP.PCAP.CD
+CYP,Cyprus,Europe & Central Asia,High income,2025.0,0.8525028,GOV_WGI_RQ.EST,2025.0,41783.08984375,NY.GDP.PCAP.CD
+CZE,Czechia,Europe & Central Asia,High income,2025.0,1.0729402,GOV_WGI_RQ.EST,2025.0,35917.2724081665,NY.GDP.PCAP.CD
+DEU,Germany,Europe & Central Asia,High income,2025.0,1.2160052,GOV_WGI_RQ.EST,2025.0,60496.4350820414,NY.GDP.PCAP.CD
+DJI,Djibouti,"Middle East, North Africa, Afghanistan & Pakistan",Lower middle income,2025.0,-0.8711622,GOV_WGI_RQ.EST,2025.0,3905.604954681,NY.GDP.PCAP.CD
+DMA,Dominica,Latin America & Caribbean ,Upper middle income,2025.0,0.0675235,GOV_WGI_RQ.EST,2025.0,10989.0431185083,NY.GDP.PCAP.CD
+DNK,Denmark,Europe & Central Asia,High income,2025.0,1.6959082,GOV_WGI_RQ.EST,2025.0,76970.1535217919,NY.GDP.PCAP.CD
+DOM,Dominican Republic,Latin America & Caribbean ,Upper middle income,2025.0,0.1836114,GOV_WGI_RQ.EST,2025.0,11059.2081531834,NY.GDP.PCAP.CD
+DZA,Algeria,"Middle East, North Africa, Afghanistan & Pakistan",Upper middle income,2025.0,-0.7890922,GOV_WGI_RQ.EST,2025.0,6051.00322704182,NY.GDP.PCAP.CD
+ECU,Ecuador,Latin America & Caribbean ,Upper middle income,2025.0,-0.7138434,GOV_WGI_RQ.EST,2025.0,7125.27618527738,NY.GDP.PCAP.CD
+EGY,"Egypt, Arab Rep.","Middle East, North Africa, Afghanistan & Pakistan",Lower middle income,2025.0,-0.4591944,GOV_WGI_RQ.EST,2025.0,3085.80712036204,NY.GDP.PCAP.CD
+ERI,Eritrea,Sub-Saharan Africa ,Low income,2025.0,-2.1058454,GOV_WGI_RQ.EST,,,
+ESP,Spain,Europe & Central Asia,High income,2025.0,0.4193351,GOV_WGI_RQ.EST,2025.0,38627.2472148623,NY.GDP.PCAP.CD
+EST,Estonia,Europe & Central Asia,High income,2025.0,1.3704796,GOV_WGI_RQ.EST,2025.0,34417.6320815138,NY.GDP.PCAP.CD
+ETH,Ethiopia,Sub-Saharan Africa ,Low income,2025.0,-0.7298898,GOV_WGI_RQ.EST,2025.0,932.729352775179,NY.GDP.PCAP.CD
+FIN,Finland,Europe & Central Asia,High income,2025.0,1.6339156,GOV_WGI_RQ.EST,2025.0,56148.580949046,NY.GDP.PCAP.CD
+FJI,Fiji,East Asia & Pacific,Upper middle income,2025.0,0.0323472,GOV_WGI_RQ.EST,2025.0,6642.00449450523,NY.GDP.PCAP.CD
+FRA,France,Europe & Central Asia,High income,2025.0,0.9886707,GOV_WGI_RQ.EST,2025.0,48985.7307807924,NY.GDP.PCAP.CD
+FRO,Faroe Islands,Europe & Central Asia,High income,,,,2024.0,74175.2776311377,NY.GDP.PCAP.CD
+FSM,"Micronesia, Fed. Sts.",East Asia & Pacific,Upper middle income,2025.0,-0.7768128,GOV_WGI_RQ.EST,2025.0,4414.00737137479,NY.GDP.PCAP.CD
+GAB,Gabon,Sub-Saharan Africa ,Upper middle income,2025.0,-0.7298169,GOV_WGI_RQ.EST,2025.0,8263.03321595,NY.GDP.PCAP.CD
+GBR,United Kingdom,Europe & Central Asia,High income,2025.0,1.4606297,GOV_WGI_RQ.EST,2025.0,57601.9621201954,NY.GDP.PCAP.CD
+GEO,Georgia,Europe & Central Asia,Upper middle income,2025.0,0.6233732,GOV_WGI_RQ.EST,2025.0,9691.53472415196,NY.GDP.PCAP.CD
+GHA,Ghana,Sub-Saharan Africa ,Lower middle income,2025.0,-0.1842491,GOV_WGI_RQ.EST,2025.0,3257.1588903576,NY.GDP.PCAP.CD
+GIB,Gibraltar,Europe & Central Asia,High income,,,,,,
+GIN,Guinea,Sub-Saharan Africa ,Lower middle income,2025.0,-0.9512821,GOV_WGI_RQ.EST,2025.0,1877.2541220972,NY.GDP.PCAP.CD
+GMB,"Gambia, The",Sub-Saharan Africa ,Low income,2025.0,-0.6444575,GOV_WGI_RQ.EST,2025.0,919.060423427951,NY.GDP.PCAP.CD
+GNB,Guinea-Bissau,Sub-Saharan Africa ,Low income,2025.0,-1.2328365,GOV_WGI_RQ.EST,2025.0,1123.76679992349,NY.GDP.PCAP.CD
+GNQ,Equatorial Guinea,Sub-Saharan Africa ,Upper middle income,2025.0,-1.433462,GOV_WGI_RQ.EST,2025.0,6615.25245207167,NY.GDP.PCAP.CD
+GRC,Greece,Europe & Central Asia,High income,2025.0,0.4160142,GOV_WGI_RQ.EST,2025.0,26948.0070432791,NY.GDP.PCAP.CD
+GRD,Grenada,Latin America & Caribbean ,Upper middle income,2025.0,-0.026247,GOV_WGI_RQ.EST,2025.0,12106.8790105068,NY.GDP.PCAP.CD
+GRL,Greenland,Europe & Central Asia,High income,2025.0,1.0704544,GOV_WGI_RQ.EST,2023.0,58498.9707973609,NY.GDP.PCAP.CD
+GTM,Guatemala,Latin America & Caribbean ,Upper middle income,2025.0,-0.3365214,GOV_WGI_RQ.EST,2025.0,6598.18032988711,NY.GDP.PCAP.CD
+GUM,Guam,East Asia & Pacific,High income,2025.0,0.3744982,GOV_WGI_RQ.EST,2022.0,41833.1517132825,NY.GDP.PCAP.CD
+GUY,Guyana,Latin America & Caribbean ,High income,2025.0,-0.4066362,GOV_WGI_RQ.EST,2025.0,32413.7930757518,NY.GDP.PCAP.CD
+HKG,"Hong Kong SAR, China",East Asia & Pacific,High income,2025.0,1.6167471,GOV_WGI_RQ.EST,2025.0,56983.0663059906,NY.GDP.PCAP.CD
+HND,Honduras,Latin America & Caribbean ,Lower middle income,2025.0,-0.6347649,GOV_WGI_RQ.EST,2025.0,3598.21450440452,NY.GDP.PCAP.CD
+HRV,Croatia,Europe & Central Asia,High income,2025.0,0.4350434,GOV_WGI_RQ.EST,2025.0,27103.9116109268,NY.GDP.PCAP.CD
+HTI,Haiti,Latin America & Caribbean ,Lower middle income,2025.0,-1.5103394,GOV_WGI_RQ.EST,2025.0,2694.18969101404,NY.GDP.PCAP.CD
+HUN,Hungary,Europe & Central Asia,High income,2025.0,0.2637552,GOV_WGI_RQ.EST,2025.0,25907.4743259406,NY.GDP.PCAP.CD
+IDN,Indonesia,East Asia & Pacific,Upper middle income,2025.0,0.1062892,GOV_WGI_RQ.EST,2025.0,5059.62596411213,NY.GDP.PCAP.CD
+IMN,Isle of Man,Europe & Central Asia,High income,,,,2023.0,90015.2074234398,NY.GDP.PCAP.CD
+IND,India,South Asia,Lower middle income,2025.0,-0.1695733,GOV_WGI_RQ.EST,2025.0,2702.47987141553,NY.GDP.PCAP.CD
+IRL,Ireland,Europe & Central Asia,High income,2025.0,1.6173848,GOV_WGI_RQ.EST,2025.0,131592.462547877,NY.GDP.PCAP.CD
+IRN,"Iran, Islamic Rep.","Middle East, North Africa, Afghanistan & Pakistan",Upper middle income,2025.0,-1.5254608,GOV_WGI_RQ.EST,2025.0,3924.38017821898,NY.GDP.PCAP.CD
+IRQ,Iraq,"Middle East, North Africa, Afghanistan & Pakistan",Upper middle income,2025.0,-1.0139353,GOV_WGI_RQ.EST,2025.0,5409.67899716967,NY.GDP.PCAP.CD
+ISL,Iceland,Europe & Central Asia,High income,2025.0,1.0654594,GOV_WGI_RQ.EST,2025.0,98323.4849517418,NY.GDP.PCAP.CD
+ISR,Israel,"Middle East, North Africa, Afghanistan & Pakistan",High income,2025.0,1.1257363,GOV_WGI_RQ.EST,2025.0,60336.8477964194,NY.GDP.PCAP.CD
+ITA,Italy,Europe & Central Asia,High income,2025.0,0.5979855,GOV_WGI_RQ.EST,2025.0,43308.6403060733,NY.GDP.PCAP.CD
+JAM,Jamaica,Latin America & Caribbean ,Upper middle income,2025.0,0.0155476,GOV_WGI_RQ.EST,2025.0,8002.92104076242,NY.GDP.PCAP.CD
+JOR,Jordan,"Middle East, North Africa, Afghanistan & Pakistan",Upper middle income,2025.0,0.3313692,GOV_WGI_RQ.EST,2025.0,5347.77731384797,NY.GDP.PCAP.CD
+JPN,Japan,East Asia & Pacific,High income,2025.0,1.2213162,GOV_WGI_RQ.EST,2025.0,35951.0449549304,NY.GDP.PCAP.CD
+KAZ,Kazakhstan,Europe & Central Asia,Upper middle income,2025.0,0.0222441,GOV_WGI_RQ.EST,2025.0,14692.1331757237,NY.GDP.PCAP.CD
+KEN,Kenya,Sub-Saharan Africa ,Lower middle income,2025.0,-0.3732571,GOV_WGI_RQ.EST,2025.0,2362.86091198611,NY.GDP.PCAP.CD
+KGZ,Kyrgyz Republic,Europe & Central Asia,Lower middle income,2025.0,-0.3968096,GOV_WGI_RQ.EST,2025.0,3080.96893823359,NY.GDP.PCAP.CD
+KHM,Cambodia,East Asia & Pacific,Lower middle income,2025.0,-0.5865688,GOV_WGI_RQ.EST,2025.0,2872.42926639909,NY.GDP.PCAP.CD
+KIR,Kiribati,East Asia & Pacific,Lower middle income,2025.0,-0.4186168,GOV_WGI_RQ.EST,2025.0,2558.66636011102,NY.GDP.PCAP.CD
+KNA,St. Kitts and Nevis,Latin America & Caribbean ,High income,2025.0,0.5831824,GOV_WGI_RQ.EST,2025.0,25223.0257622185,NY.GDP.PCAP.CD
+KOR,"Korea, Rep.",East Asia & Pacific,High income,2025.0,1.0028188,GOV_WGI_RQ.EST,2025.0,36226.9663637512,NY.GDP.PCAP.CD
+KWT,Kuwait,"Middle East, North Africa, Afghanistan & Pakistan",High income,2025.0,0.358058,GOV_WGI_RQ.EST,2025.0,32312.3119953634,NY.GDP.PCAP.CD
+LAO,Lao PDR,East Asia & Pacific,Lower middle income,2025.0,-0.6595589,GOV_WGI_RQ.EST,2025.0,2324.76353098791,NY.GDP.PCAP.CD
+LBN,Lebanon,"Middle East, North Africa, Afghanistan & Pakistan",Lower middle income,2025.0,-0.8532203,GOV_WGI_RQ.EST,2024.0,4473.27134441128,NY.GDP.PCAP.CD
+LBR,Liberia,Sub-Saharan Africa ,Low income,2025.0,-0.8653224,GOV_WGI_RQ.EST,2025.0,915.328972645548,NY.GDP.PCAP.CD
+LBY,Libya,"Middle East, North Africa, Afghanistan & Pakistan",Upper middle income,2025.0,-1.6636464,GOV_WGI_RQ.EST,2025.0,6448.82415074121,NY.GDP.PCAP.CD
+LCA,St. Lucia,Latin America & Caribbean ,Upper middle income,2025.0,0.2209689,GOV_WGI_RQ.EST,2025.0,14745.8184305461,NY.GDP.PCAP.CD
+LIE,Liechtenstein,Europe & Central Asia,High income,2025.0,1.547715,GOV_WGI_RQ.EST,2024.0,220167.225473557,NY.GDP.PCAP.CD
+LKA,Sri Lanka,South Asia,Upper middle income,2025.0,-0.3036811,GOV_WGI_RQ.EST,2025.0,5002.07904353724,NY.GDP.PCAP.CD
+LSO,Lesotho,Sub-Saharan Africa ,Lower middle income,2025.0,-0.4884651,GOV_WGI_RQ.EST,2025.0,1088.96276223185,NY.GDP.PCAP.CD
+LTU,Lithuania,Europe & Central Asia,High income,2025.0,1.2704989,GOV_WGI_RQ.EST,2025.0,32958.6706396386,NY.GDP.PCAP.CD
+LUX,Luxembourg,Europe & Central Asia,High income,2025.0,1.6431174,GOV_WGI_RQ.EST,2025.0,147252.179121515,NY.GDP.PCAP.CD
+LVA,Latvia,Europe & Central Asia,High income,2025.0,1.0224666,GOV_WGI_RQ.EST,2025.0,26311.9730706362,NY.GDP.PCAP.CD
+MAC,"Macao SAR, China",East Asia & Pacific,High income,2025.0,1.3815667,GOV_WGI_RQ.EST,2025.0,75901.7461294198,NY.GDP.PCAP.CD
+MAF,St. Martin (French part),Latin America & Caribbean ,High income,,,,2021.0,21668.3776525323,NY.GDP.PCAP.CD
+MAR,Morocco,"Middle East, North Africa, Afghanistan & Pakistan",Lower middle income,2025.0,-0.0179117,GOV_WGI_RQ.EST,2025.0,4672.46826171875,NY.GDP.PCAP.CD
+MCO,Monaco,Europe & Central Asia,High income,2025.0,1.5634723,GOV_WGI_RQ.EST,2024.0,288001.574856495,NY.GDP.PCAP.CD
+MDA,Moldova,Europe & Central Asia,Upper middle income,2025.0,-0.0529251,GOV_WGI_RQ.EST,2025.0,8621.71721623786,NY.GDP.PCAP.CD
+MDG,Madagascar,Sub-Saharan Africa ,Low income,2025.0,-0.8332701,GOV_WGI_RQ.EST,2025.0,599.265294255357,NY.GDP.PCAP.CD
+MDV,Maldives,South Asia,Upper middle income,2025.0,-0.3970683,GOV_WGI_RQ.EST,2025.0,14614.7208116541,NY.GDP.PCAP.CD
+MEX,Mexico,Latin America & Caribbean ,Upper middle income,2025.0,-0.233724,GOV_WGI_RQ.EST,2025.0,13889.2339628708,NY.GDP.PCAP.CD
+MHL,Marshall Islands,East Asia & Pacific,Upper middle income,2025.0,-0.7313419,GOV_WGI_RQ.EST,2025.0,8489.05793506422,NY.GDP.PCAP.CD
+MKD,North Macedonia,Europe & Central Asia,Upper middle income,2025.0,0.4542702,GOV_WGI_RQ.EST,2025.0,10489.9255355525,NY.GDP.PCAP.CD
+MLI,Mali,Sub-Saharan Africa ,Low income,2025.0,-0.8082627,GOV_WGI_RQ.EST,2025.0,1193.27601004701,NY.GDP.PCAP.CD
+MLT,Malta,"Middle East, North Africa, Afghanistan & Pakistan",High income,2025.0,0.4084213,GOV_WGI_RQ.EST,2025.0,47906.9000057635,NY.GDP.PCAP.CD
+MMR,Myanmar,East Asia & Pacific,Lower middle income,2025.0,-1.4555772,GOV_WGI_RQ.EST,2025.0,1488.87527836542,NY.GDP.PCAP.CD
+MNE,Montenegro,Europe & Central Asia,Upper middle income,2025.0,0.2092931,GOV_WGI_RQ.EST,2025.0,14816.8380299947,NY.GDP.PCAP.CD
+MNG,Mongolia,East Asia & Pacific,Upper middle income,2025.0,-0.0492509,GOV_WGI_RQ.EST,2025.0,7108.22743246244,NY.GDP.PCAP.CD
+MNP,Northern Mariana Islands,East Asia & Pacific,High income,,,,2022.0,23785.754590043,NY.GDP.PCAP.CD
+MOZ,Mozambique,Sub-Saharan Africa ,Low income,2025.0,-0.7604291,GOV_WGI_RQ.EST,2025.0,626.914419215727,NY.GDP.PCAP.CD
+MRT,Mauritania,Sub-Saharan Africa ,Lower middle income,2025.0,-0.722703,GOV_WGI_RQ.EST,2025.0,2197.51046251309,NY.GDP.PCAP.CD
+MUS,Mauritius,Sub-Saharan Africa ,Upper middle income,2025.0,0.9321285,GOV_WGI_RQ.EST,2025.0,12991.2935987166,NY.GDP.PCAP.CD
+MWI,Malawi,Sub-Saharan Africa ,Low income,2025.0,-0.589032,GOV_WGI_RQ.EST,2025.0,671.506847203876,NY.GDP.PCAP.CD
+MYS,Malaysia,East Asia & Pacific,Upper middle income,2025.0,0.6842337,GOV_WGI_RQ.EST,2025.0,13124.5554178269,NY.GDP.PCAP.CD
+NAM,Namibia,Sub-Saharan Africa ,Lower middle income,2025.0,0.0723,GOV_WGI_RQ.EST,2025.0,4875.92558158247,NY.GDP.PCAP.CD
+NCL,New Caledonia,East Asia & Pacific,High income,,,,2024.0,29213.1923192946,NY.GDP.PCAP.CD
+NER,Niger,Sub-Saharan Africa ,Low income,2025.0,-0.7658487,GOV_WGI_RQ.EST,2025.0,775.353622143879,NY.GDP.PCAP.CD
+NGA,Nigeria,Sub-Saharan Africa ,Lower middle income,2025.0,-0.6455435,GOV_WGI_RQ.EST,2025.0,1224.25410237743,NY.GDP.PCAP.CD
+NIC,Nicaragua,Latin America & Caribbean ,Lower middle income,2025.0,-0.9430402,GOV_WGI_RQ.EST,2025.0,3173.33724815085,NY.GDP.PCAP.CD
+NLD,Netherlands,Europe & Central Asia,High income,2025.0,1.4372922,GOV_WGI_RQ.EST,2025.0,73683.917132794,NY.GDP.PCAP.CD
+NOR,Norway,Europe & Central Asia,High income,2025.0,1.5855436,GOV_WGI_RQ.EST,2025.0,94594.1929573987,NY.GDP.PCAP.CD
+NPL,Nepal,South Asia,Lower middle income,2025.0,-0.6533801,GOV_WGI_RQ.EST,2025.0,1535.87781246307,NY.GDP.PCAP.CD
+NRU,Naoero,East Asia & Pacific,High income,2025.0,-0.5761204,GOV_WGI_RQ.EST,2025.0,14639.5046929186,NY.GDP.PCAP.CD
+NZL,New Zealand,East Asia & Pacific,High income,2025.0,1.8537012,GOV_WGI_RQ.EST,2025.0,49591.0405731713,NY.GDP.PCAP.CD
+OMN,Oman,"Middle East, North Africa, Afghanistan & Pakistan",High income,2025.0,0.6926743,GOV_WGI_RQ.EST,2025.0,19947.3966227092,NY.GDP.PCAP.CD
+PAK,Pakistan,"Middle East, North Africa, Afghanistan & Pakistan",Lower middle income,2025.0,-0.9179055,GOV_WGI_RQ.EST,2025.0,1595.90912252837,NY.GDP.PCAP.CD
+PAN,Panama,Latin America & Caribbean ,High income,2025.0,-0.1213082,GOV_WGI_RQ.EST,2025.0,19789.7308555826,NY.GDP.PCAP.CD
+PER,Peru,Latin America & Caribbean ,Upper middle income,2025.0,0.1192996,GOV_WGI_RQ.EST,2025.0,9684.41170314988,NY.GDP.PCAP.CD
+PHL,Philippines,East Asia & Pacific,Upper middle income,2025.0,0.1720213,GOV_WGI_RQ.EST,2025.0,4170.72347271451,NY.GDP.PCAP.CD
+PLW,Palau,East Asia & Pacific,High income,2025.0,0.4450326,GOV_WGI_RQ.EST,2025.0,19532.3557719527,NY.GDP.PCAP.CD
+PNG,Papua New Guinea,East Asia & Pacific,Lower middle income,2025.0,-0.6137294,GOV_WGI_RQ.EST,2025.0,3019.5309140573,NY.GDP.PCAP.CD
+POL,Poland,Europe & Central Asia,High income,2025.0,0.7887153,GOV_WGI_RQ.EST,2025.0,28419.5777395638,NY.GDP.PCAP.CD
+PRI,Puerto Rico (US),Latin America & Caribbean ,High income,2025.0,0.2807088,GOV_WGI_RQ.EST,2025.0,40620.1526923687,NY.GDP.PCAP.CD
+PRK,"Korea, Dem. People's Rep.",East Asia & Pacific,Low income,2025.0,-1.9884513,GOV_WGI_RQ.EST,,,
+PRT,Portugal,Europe & Central Asia,High income,2025.0,0.5607533,GOV_WGI_RQ.EST,2025.0,32081.8106150292,NY.GDP.PCAP.CD
+PRY,Paraguay,Latin America & Caribbean ,Upper middle income,2025.0,-0.0294881,GOV_WGI_RQ.EST,2025.0,7026.61906146401,NY.GDP.PCAP.CD
+PSE,West Bank and Gaza,"Middle East, North Africa, Afghanistan & Pakistan",Lower middle income,2025.0,-0.4065393,GOV_WGI_RQ.EST,2025.0,3171.10844621579,NY.GDP.PCAP.CD
+PYF,French Polynesia,East Asia & Pacific,High income,,,,2024.0,22439.8838746025,NY.GDP.PCAP.CD
+QAT,Qatar,"Middle East, North Africa, Afghanistan & Pakistan",High income,2025.0,0.9977909,GOV_WGI_RQ.EST,2025.0,72524.9066385222,NY.GDP.PCAP.CD
+ROU,Romania,Europe & Central Asia,High income,2025.0,0.2686943,GOV_WGI_RQ.EST,2025.0,22537.9532108047,NY.GDP.PCAP.CD
+RUS,Russian Federation,Europe & Central Asia,High income,2025.0,-1.1954072,GOV_WGI_RQ.EST,2025.0,17546.609375,NY.GDP.PCAP.CD
+RWA,Rwanda,Sub-Saharan Africa ,Low income,2025.0,0.2546363,GOV_WGI_RQ.EST,2025.0,1123.73874633225,NY.GDP.PCAP.CD
+SAU,Saudi Arabia,"Middle East, North Africa, Afghanistan & Pakistan",High income,2025.0,0.6694526,GOV_WGI_RQ.EST,2025.0,34536.6555456551,NY.GDP.PCAP.CD
+SDN,Sudan,Sub-Saharan Africa ,Low income,2025.0,-1.7438138,GOV_WGI_RQ.EST,2025.0,1164.53991699219,NY.GDP.PCAP.CD
+SEN,Senegal,Sub-Saharan Africa ,Lower middle income,2025.0,-0.2630801,GOV_WGI_RQ.EST,2025.0,1954.71174194867,NY.GDP.PCAP.CD
+SGP,Singapore,East Asia & Pacific,High income,2025.0,2.112798,GOV_WGI_RQ.EST,2025.0,98813.9788172877,NY.GDP.PCAP.CD
+SLB,Solomon Islands,East Asia & Pacific,Lower middle income,2025.0,-0.9511911,GOV_WGI_RQ.EST,2025.0,2086.18955928928,NY.GDP.PCAP.CD
+SLE,Sierra Leone,Sub-Saharan Africa ,Low income,2025.0,-1.1035484,GOV_WGI_RQ.EST,2025.0,846.296172499617,NY.GDP.PCAP.CD
+SLV,El Salvador,Latin America & Caribbean ,Upper middle income,2025.0,-0.1415306,GOV_WGI_RQ.EST,2025.0,5766.72574029107,NY.GDP.PCAP.CD
+SMR,San Marino,Europe & Central Asia,High income,2025.0,0.8500879,GOV_WGI_RQ.EST,2023.0,59871.3288101478,NY.GDP.PCAP.CD
+SOM,"Somalia, Fed. Rep.",Sub-Saharan Africa ,Low income,2025.0,-1.7047566,GOV_WGI_RQ.EST,2025.0,661.173877723116,NY.GDP.PCAP.CD
+SRB,Serbia,Europe & Central Asia,Upper middle income,2025.0,0.057185,GOV_WGI_RQ.EST,2025.0,15262.0464193413,NY.GDP.PCAP.CD
+SSD,South Sudan,Sub-Saharan Africa ,Low income,2025.0,-1.9170395,GOV_WGI_RQ.EST,2015.0,1080.14718624765,NY.GDP.PCAP.CD
+STP,Sao Tome and Principe,Sub-Saharan Africa ,Lower middle income,2025.0,-0.9390277,GOV_WGI_RQ.EST,2025.0,4084.40062145233,NY.GDP.PCAP.CD
+SUR,Suriname,Latin America & Caribbean ,Upper middle income,2025.0,-0.7954638,GOV_WGI_RQ.EST,2025.0,7069.87230892274,NY.GDP.PCAP.CD
+SVK,Slovak Republic,Europe & Central Asia,High income,2025.0,0.3799805,GOV_WGI_RQ.EST,2025.0,28543.6653439813,NY.GDP.PCAP.CD
+SVN,Slovenia,Europe & Central Asia,High income,2025.0,0.6605027,GOV_WGI_RQ.EST,2025.0,37376.2216079138,NY.GDP.PCAP.CD
+SWE,Sweden,Europe & Central Asia,High income,2025.0,1.5705479,GOV_WGI_RQ.EST,2025.0,63133.2126736715,NY.GDP.PCAP.CD
+SWZ,Eswatini,Sub-Saharan Africa ,Lower middle income,2025.0,-0.6760979,GOV_WGI_RQ.EST,2025.0,4108.25221093363,NY.GDP.PCAP.CD
+SXM,Sint Maarten (Dutch part),Latin America & Caribbean ,High income,,,,2025.0,42978.1317407037,NY.GDP.PCAP.CD
+SYC,Seychelles,Sub-Saharan Africa ,High income,2025.0,0.3148438,GOV_WGI_RQ.EST,2025.0,19449.3836346926,NY.GDP.PCAP.CD
+SYR,Syrian Arab Republic,"Middle East, North Africa, Afghanistan & Pakistan",Low income,2025.0,-1.8104974,GOV_WGI_RQ.EST,2022.0,1056.78264718197,NY.GDP.PCAP.CD
+TCA,Turks and Caicos Islands,Latin America & Caribbean ,High income,,,,2024.0,37506.7798431288,NY.GDP.PCAP.CD
+TCD,Chad,Sub-Saharan Africa ,Low income,2025.0,-1.1048926,GOV_WGI_RQ.EST,2025.0,1022.33559390754,NY.GDP.PCAP.CD
+TGO,Togo,Sub-Saharan Africa ,Lower middle income,2025.0,-0.4756185,GOV_WGI_RQ.EST,2025.0,1383.89974929887,NY.GDP.PCAP.CD
+THA,Thailand,East Asia & Pacific,Upper middle income,2025.0,0.1243928,GOV_WGI_RQ.EST,2025.0,8056.56359761558,NY.GDP.PCAP.CD
+TJK,Tajikistan,Europe & Central Asia,Lower middle income,2025.0,-0.8038033,GOV_WGI_RQ.EST,2025.0,1637.2542942547,NY.GDP.PCAP.CD
+TKM,Turkmenistan,Europe & Central Asia,Upper middle income,2025.0,-1.880271,GOV_WGI_RQ.EST,2025.0,6540.17876401136,NY.GDP.PCAP.CD
+TLS,Timor-Leste,East Asia & Pacific,Lower middle income,2025.0,-0.7324087,GOV_WGI_RQ.EST,2025.0,1340.9640193437,NY.GDP.PCAP.CD
+TON,Tonga,East Asia & Pacific,Upper middle income,2025.0,-0.2553057,GOV_WGI_RQ.EST,2025.0,6547.18646814228,NY.GDP.PCAP.CD
+TTO,Trinidad and Tobago,Latin America & Caribbean ,High income,2025.0,-0.1775546,GOV_WGI_RQ.EST,2025.0,18967.2704636681,NY.GDP.PCAP.CD
+TUN,Tunisia,"Middle East, North Africa, Afghanistan & Pakistan",Lower middle income,2025.0,-0.5249698,GOV_WGI_RQ.EST,2025.0,4656.63818386852,NY.GDP.PCAP.CD
+TUR,Turkiye,Europe & Central Asia,Upper middle income,2025.0,-0.1718558,GOV_WGI_RQ.EST,2025.0,18599.4420922378,NY.GDP.PCAP.CD
+TUV,Tuvalu,East Asia & Pacific,Upper middle income,2025.0,-0.4418324,GOV_WGI_RQ.EST,2025.0,6041.44908591428,NY.GDP.PCAP.CD
+TZA,Tanzania,Sub-Saharan Africa ,Lower middle income,2025.0,-0.493739,GOV_WGI_RQ.EST,2025.0,1318.81921386719,NY.GDP.PCAP.CD
+UGA,Uganda,Sub-Saharan Africa ,Low income,2025.0,-0.5934528,GOV_WGI_RQ.EST,2025.0,1206.30450825002,NY.GDP.PCAP.CD
+UKR,Ukraine,Europe & Central Asia,Upper middle income,2025.0,-0.2816932,GOV_WGI_RQ.EST,2025.0,5865.884765625,NY.GDP.PCAP.CD
+URY,Uruguay,Latin America & Caribbean ,High income,2025.0,0.5521529,GOV_WGI_RQ.EST,2025.0,25215.8238152781,NY.GDP.PCAP.CD
+USA,United States,North America,High income,2025.0,1.0060452,GOV_WGI_RQ.EST,2025.0,90026.5163005744,NY.GDP.PCAP.CD
+UZB,Uzbekistan,Europe & Central Asia,Lower middle income,2025.0,-0.5201086,GOV_WGI_RQ.EST,2025.0,3968.2720079072,NY.GDP.PCAP.CD
+VCT,St. Vincent and the Grenadines,Latin America & Caribbean ,Upper middle income,2025.0,0.1244573,GOV_WGI_RQ.EST,2025.0,12561.769166789,NY.GDP.PCAP.CD
+VEN,"Venezuela, RB",Latin America & Caribbean ,Lower middle income,2025.0,-1.9851346,GOV_WGI_RQ.EST,2025.0,3494.8138870244,NY.GDP.PCAP.CD
+VGB,British Virgin Islands,Latin America & Caribbean ,High income,,,,,,
+VIR,Virgin Islands (U.S.),Latin America & Caribbean ,High income,2025.0,1.0878826,GOV_WGI_RQ.EST,2022.0,44320.909185774,NY.GDP.PCAP.CD
+VNM,Viet Nam,East Asia & Pacific,Upper middle income,2025.0,-0.1402152,GOV_WGI_RQ.EST,2025.0,5065.99091899299,NY.GDP.PCAP.CD
+VUT,Vanuatu,East Asia & Pacific,Lower middle income,2025.0,-0.3399185,GOV_WGI_RQ.EST,2025.0,4038.73520713411,NY.GDP.PCAP.CD
+WSM,Samoa,East Asia & Pacific,Upper middle income,2025.0,-0.0755626,GOV_WGI_RQ.EST,2025.0,5872.78333308796,NY.GDP.PCAP.CD
+XKX,Kosovo,Europe & Central Asia,Upper middle income,2025.0,-0.200018,GOV_WGI_RQ.EST,2025.0,7899.41841135202,NY.GDP.PCAP.CD
+YEM,"Yemen, Rep.","Middle East, North Africa, Afghanistan & Pakistan",Low income,2025.0,-1.4707297,GOV_WGI_RQ.EST,2018.0,633.887202451545,NY.GDP.PCAP.CD
+ZAF,South Africa,Sub-Saharan Africa ,Upper middle income,2025.0,-0.0682228,GOV_WGI_RQ.EST,2025.0,6597.71450918774,NY.GDP.PCAP.CD
+ZMB,Zambia,Sub-Saharan Africa ,Lower middle income,2025.0,-0.4536446,GOV_WGI_RQ.EST,2025.0,1317.87771619597,NY.GDP.PCAP.CD
+ZWE,Zimbabwe,Sub-Saharan Africa ,Lower middle income,2025.0,-1.2751403,GOV_WGI_RQ.EST,2025.0,3021.43019873632,NY.GDP.PCAP.CD
