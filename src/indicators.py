@@ -56,3 +56,60 @@ def abandonment_rate(
         .loc[lambda df: df["outcome_gw"] >= min_gw]
         .reset_index(drop=True)
     )
+
+
+def capacity_by_stage(data: pd.DataFrame, by, weight: str = "capacity_mw") -> pd.DataFrame:
+    """Capacity (GW) by group and stage, in long format."""
+    by = [by] if isinstance(by, str) else list(by)
+    return (
+        data
+        .groupby(by + ["stage"], as_index=False, observed=True)[weight]
+        .sum()
+        .assign(gw=lambda df: df[weight] / 1000)
+        .drop(columns=weight)
+        .assign(stage=lambda df: pd.Categorical(df["stage"], STAGE_ORDER, ordered=True))
+        .sort_values(by + ["stage"])
+        .reset_index(drop=True)
+    )
+
+
+def sponsor_profiles(ownership: pd.DataFrame, location: str | None = "Abroad") -> pd.DataFrame:
+    """One row per sponsor group: portfolio by stage and two ratios.
+
+    - ``pipeline_ratio`` = (pipeline + construction) / operating capacity.
+      Above 1, the sponsor is mainly developing new projects; well below 1,
+      it mainly owns plants that are already running (an acquirer or operator).
+    - ``abandonment_rate``, on the sponsor's equity capacity.
+
+    ``location`` restricts to assets abroad ('Abroad'), at home ('Home'),
+    or keeps both (None).
+    """
+    sponsors = ownership.loc[ownership["sponsor_group"].notna()]
+    if location is not None:
+        sponsors = sponsors.loc[sponsors["location"] == location]
+    portfolio = (
+        sponsors
+        .pivot_table(index=["sponsor_group", "origin"], columns="stage",
+                     values="equity_mw", aggfunc="sum", fill_value=0)
+        .div(1000)
+        .reindex(columns=STAGE_ORDER, fill_value=0)
+        .reset_index()
+        .rename_axis(columns=None)
+    )
+    rates = abandonment_rate(sponsors, "sponsor_group", weight="equity_mw")[
+        ["sponsor_group", "abandonment_rate"]
+    ]
+    return (
+        portfolio
+        .assign(
+            portfolio_gw=lambda df: df[STAGE_ORDER].sum(axis=1),
+            # Undefined (missing) for sponsors with no operating plant abroad.
+            pipeline_ratio=lambda df: ((df["pipeline"] + df["construction"])
+                                       / df["operating"].where(df["operating"] > 0)),
+        )
+        .merge(rates, on="sponsor_group", how="left")
+        .sort_values("portfolio_gw", ascending=False)
+        .reset_index(drop=True)
+    )
+
+
