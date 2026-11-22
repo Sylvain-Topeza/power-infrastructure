@@ -51,4 +51,53 @@ def sponsor_type(ownership: pd.DataFrame) -> pd.Series:
     )
 
 
+def model_table(
+    units: pd.DataFrame,
+    ownership: pd.DataFrame,
+    worldbank: pd.DataFrame | None = None,
+) -> pd.DataFrame:
+    """Build the estimation sample: one row per unit in the outcome sample."""
+    sample = units.loc[units["in_outcome_sample"]]
+    known_owner = sample["owners"].notna() | sample["parents"].notna()
+    default = pd.Series(np.where(known_owner, "Other owner", "Unknown owner"), index=sample.index)
+    table = sample.assign(
+        abandoned=sample["abandoned"].astype(int),
+        log_capacity=np.log(sample["capacity_mw"]),
+        weight=sample["capacity_mw"] / sample["capacity_mw"].mean(),
+        sponsor=sample["unit_id"].map(sponsor_type(ownership)).fillna(default),
+    )
+    if worldbank is not None:
+        country_data = worldbank[["iso3", "income_group", "regulatory_quality"]]
+        table = table.merge(country_data, on="iso3", how="left")
+    return table
+
+
+def fit_logit(table: pd.DataFrame, formula: str, weighted: bool = True):
+    """Fit a logit (binomial GLM) with country-clustered standard errors.
+
+    Rows with a missing variable are dropped beforehand, so that the cluster
+    groups line up with the estimation sample. Units of Gulf sponsors at home
+    are excluded (perfect prediction, see the module docstring).
+    """
+    needed = [c for c in ["regulatory_quality", "income_group"] if c in formula]
+    sample = (
+        table.loc[table["sponsor"] != "Gulf sponsor at home"]
+        .dropna(subset=needed + ["abandoned", "iso3"])
+    )
+    groups = pd.factorize(sample["iso3"])[0]
+    with warnings.catch_warnings():
+        # statsmodels warns that clustered errors are "not fully supported" with
+        # weights. We silence the warning here and discuss it in the report: the
+        # unweighted model, where the issue does not arise, gives the same conclusions.
+        warnings.simplefilter("ignore", SpecificationWarning)
+        return smf.glm(
+            formula,
+            data=sample,
+            family=sm.families.Binomial(),
+            var_weights=sample["weight"] if weighted else None,
+        ).fit(cov_type="cluster", cov_kwds={"groups": groups})
+
+
+
+
 
