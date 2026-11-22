@@ -113,3 +113,35 @@ def sponsor_profiles(ownership: pd.DataFrame, location: str | None = "Abroad") -
     )
 
 
+def home_vs_abroad(ownership: pd.DataFrame, by: str = "origin") -> pd.DataFrame:
+    """Abandonment rates of sponsors at home and abroad, by ``by``
+    ('origin' for Gulf vs global peers, or 'sponsor_group')."""
+    return abandonment_rate(
+        ownership.loc[ownership["sponsor_group"].notna()],
+        [by, "location"],
+        weight="equity_mw",
+    )
+
+
+def robustness_checks(units: pd.DataFrame, by: str = "area") -> pd.DataFrame:
+    """Abandonment rates by ``by`` under alternative definitions.
+
+    - 'Baseline': abandoned vs under construction or operating since 2010;
+    - 'Excluding inferred statuses': drops units that GEM classifies as
+      cancelled or shelved only because no news was found for 2-4 years
+      (a lower bound for the rate);
+    - 'Excluding construction': counts as built only the plants already in
+      operation, since projects under construction can still be abandoned
+      (an upper bound for the rate).
+    """
+    variants = {
+        "Excluding inferred statuses": units.loc[~units["status_inferred"]],
+        "Baseline": units,
+        "Excluding construction": units.assign(
+            in_outcome_sample=units["in_outcome_sample"] & (units["stage"] != "construction")
+        ),
+    }
+    return pd.concat(
+        [abandonment_rate(data, by).assign(definition=name) for name, data in variants.items()]
+    ).pivot(index=by, columns="definition", values="abandonment_rate")[list(variants)]
+
