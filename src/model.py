@@ -98,6 +98,67 @@ def fit_logit(table: pd.DataFrame, formula: str, weighted: bool = True):
         ).fit(cov_type="cluster", cov_kwds={"groups": groups})
 
 
+def odds_ratios(result) -> pd.DataFrame:
+    """Odds ratios with 95% confidence intervals and p-values.
+
+    An odds ratio of 2 means that the odds of abandonment are twice as high
+    as for the reference category, all other variables being equal.
+    """
+    ci = np.exp(result.conf_int())
+    return (
+        pd.DataFrame(
+            {
+                "odds_ratio": np.exp(result.params),
+                "ci_low": ci[0],
+                "ci_high": ci[1],
+                "p_value": result.pvalues,
+            }
+        )
+        .drop(index="Intercept")
+        .rename_axis("variable")
+        .reset_index()
+    )
+
+
+def readable_labels(table: pd.DataFrame) -> pd.DataFrame:
+    """Turn statsmodels names such as 'C(technology, Treatment("Solar"))[T.Coal]'
+    into readable labels such as 'Technology: Coal'."""
+    pattern = r'C\((?P<var>\w+)(?:, Treatment\("[^"]+"\))?\)\[T\.(?P<level>[^\]]+)\]'
+    extracted = table["variable"].str.extract(pattern)
+    names = {"technology": "Technology", "area": "Region", "sponsor": "Owner",
+             "income_group": "Income"}
+    label = extracted["var"].map(names) + ": " + extracted["level"]
+    label = label.fillna(table["variable"].replace({
+        "log_capacity": "Capacity (log MW)",
+        "regulatory_quality": "Regulatory quality (+1 point)",
+        "I(regulatory_quality ** 2)": "Regulatory quality, squared",
+    }))
+    return table.assign(label=label)
+
+
+def compare_models(results: dict) -> pd.DataFrame:
+    """Side-by-side odds ratios and p-values of several fitted models.
+
+    ``results`` maps a model name to a fitted result."""
+    tables = [
+        readable_labels(odds_ratios(result))
+        .set_index("label")[["odds_ratio", "p_value"]]
+        .rename(columns=lambda column: f"{column} ({name})")
+        for name, result in results.items()
+    ]
+    return pd.concat(tables, axis=1).reset_index()
+
+
+def model_summary(results: dict) -> pd.DataFrame:
+    """Number of units and McFadden pseudo R² of each model."""
+    return pd.DataFrame(
+        {
+            "units": [int(r.nobs) for r in results.values()],
+            "pseudo_r2": [r.pseudo_rsquared(kind="mcf") for r in results.values()],
+        },
+        index=list(results),
+    )
+
 
 
 
