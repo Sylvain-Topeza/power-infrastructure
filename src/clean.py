@@ -124,3 +124,70 @@ def build_units(gem: pd.DataFrame, country_codes: pd.DataFrame) -> pd.DataFrame:
 # --------------------------------------------------------------------------
 # "Company A [51%]; Company B [49%]" -> owner name and share, per entry.
 OWNER_PATTERN = re.compile(r"^(?P<owner>.*?)\s*(?:\[(?P<share>[\d.]+)%\])?\s*$")
+
+
+def parse_owners(text) -> list:
+    """Split an ownership field into a list of (owner, share in %) pairs.
+
+    When no share is reported (most wind and solar projects), capacity is split
+    equally between the listed owners. When only some shares are reported,
+    owners without a share get zero, so that the total never exceeds 100%.
+    """
+    if not isinstance(text, str) or not text.strip():
+        return []
+    entries = []
+    for part in text.split(";"):
+        match = OWNER_PATTERN.match(part.strip())
+        share = match.group("share")
+        entries.append((match.group("owner"), float(share) if share else None))
+    if all(share is None for _, share in entries):
+        return [(owner, 100 / len(entries)) for owner, _ in entries]
+    return [(owner, share or 0.0) for owner, share in entries]
+
+
+def build_ownership(units: pd.DataFrame) -> pd.DataFrame:
+    """Long table with one row per unit and owner.
+
+    We use the ultimate parent companies when GEM reports them (coal and gas
+    plants) and the direct owners otherwise. ``equity_mw`` is the capacity
+    attributable to each owner (capacity x share).
+    """
+    source = units["parents"].where(units["parents"].notna(), units["owners"])
+    ownership = (
+        units[["unit_id"]]
+        .assign(
+            entries=source.map(parse_owners),
+            share_reported=source.fillna("").str.contains("%"),
+            owner_level=np.where(units["parents"].notna(), "parent", "owner"),
+        )
+        .explode("entries")
+        .dropna(subset=["entries"])
+    )
+    ownership[["owner", "share_pct"]] = pd.DataFrame(
+        ownership["entries"].tolist(), index=ownership.index
+    )
+    ownership = (
+        ownership
+        .drop(columns="entries")
+        .merge(units, on="unit_id", how="left")
+        .assign(equity_mw=lambda df: df["capacity_mw"] * df["share_pct"] / 100)
+        .reset_index(drop=True)
+    )
+    return ownership
+
+
+def assign_sponsor_groups(ownership: pd.DataFrame, sponsors: pd.DataFrame) -> pd.DataFrame:
+    """Link each owner to a sponsor group, using the regular expressions of
+    data/sponsors.csv (first match wins). Also flags whether the asset is in
+    the sponsor's home country or abroad."""
+    group = pd.Series(pd.NA, index=ownership.index, dtype="object")
+    for row in sponsors.itertuples():
+        matches = group.isna() & ownership["owner"].str.contains(row.pattern, regex=True)
+        group[matches] = row.sponsor_group
+    sponsor_info = sponsors.set_index("sponsor_group")[["home_country", "origin"]]
+    ownership = ownership.assign(sponsor_group=group).join(sponsor_info, on="sponsor_group")
+    is_home = ownership["home_country"].eq(ownership["country"]).fillna(False)
+    location = pd.Series("Abroad", index=ownership.index, dtype="object")
+    location[is_home.to_numpy(dtype=bool)] = "Home"
+    location[ownership["home_country"].isna().to_numpy()] = None
+    return ownership.assign(location=location)
