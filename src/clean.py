@@ -191,3 +191,21 @@ def assign_sponsor_groups(ownership: pd.DataFrame, sponsors: pd.DataFrame) -> pd
     location[is_home.to_numpy(dtype=bool)] = "Home"
     location[ownership["home_country"].isna().to_numpy()] = None
     return ownership.assign(location=location)
+
+
+def matched_owner_names(ownership: pd.DataFrame, top: int = 3) -> pd.DataFrame:
+    """For each sponsor group, the raw owner names it captured (largest first).
+
+    Used to check the regular expressions of data/sponsors.csv by eye:
+    a wrong pattern shows up as an unrelated company in this table.
+    """
+    return (
+        ownership
+        .dropna(subset=["sponsor_group"])
+        .groupby(["sponsor_group", "owner"], as_index=False)["equity_mw"].sum()
+        .sort_values("equity_mw", ascending=False)
+        .groupby("sponsor_group")
+        .agg(n_names=("owner", "nunique"),
+             largest_names=("owner", lambda names: "; ".join(names.head(top))))
+        .reset_index()
+    )
