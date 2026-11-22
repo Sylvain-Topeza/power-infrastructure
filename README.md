@@ -1,7 +1,8 @@
 # Which Power Projects Actually Get Built?
 ### Development Risk in the Middle East and Beyond
 
-*ENSAE Paris, Python for Data Science (2026-2027)*
+*ENSAE Paris, Python for Data Science (2026-2027).*
+
 *Sylvain Topeza, Maxime Rolland, Arcadius Kouwagou.*
 
 Governments and companies announce far more power plants than they build. For anyone who
