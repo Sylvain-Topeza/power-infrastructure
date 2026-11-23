@@ -123,8 +123,8 @@ The project runs on any computer with **Python 3.11+** and an internet connectio
 (it was developed on the [SSP Cloud](https://datalab.sspcloud.fr)).
 
 ```bash
-git clone https://github.com/<user>/power-projects-development-risk.git
-cd power-projects-development-risk
+git clone https://github.com/Sylvain-Topeza/power-infrastructure.git
+cd power-infrastructure
 pip install -r requirements.txt
 ```
 
