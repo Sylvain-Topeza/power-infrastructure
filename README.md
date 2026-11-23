@@ -17,7 +17,7 @@ Using asset-level data on about **180,000 power units worldwide**, this project 
 2. **Where is development risk highest?** With a focus on the Middle East, where a single
    state buyer tenders most new capacity.
 3. **Is it the market or the developer?** We follow the same Gulf developers (ACWA Power,
-   Masdar, TAQA...) at home and abroad, and compare them with 18 global peers (ENGIE, EDF,
+   Masdar, TAQA...) at home and abroad, and compare them with 17 global peers (ENGIE, EDF,
    Ørsted, Brookfield...).
 
 📓 **The full report is the notebook [`main.ipynb`](main.ipynb).**
@@ -32,22 +32,20 @@ develop (20% abandoned), coal (57%) and nuclear (75%) the riskiest.
 
 ![Abandonment rates by technology](figures/rates_by_technology.png)
 
-**2. Development risk depends on the market.** Gulf countries abandon 14% of their
-capacity against 41% in the rest of the world, with Saudi Arabia (3%) and Qatar (0%) close
-to zero: a state buyer tenders projects and signs long-term contracts before they become
-public. Kuwait (46%) is the exception. High rates are found in fragile countries, but also
-in rich, open markets such as the United Kingdom (64%) or Australia (79%), where developers
-compete and carry the early risk themselves. The relationship with the quality of regulation, 
-measured by the World Bank, is U-shaped: abandonment is highest both where institutions are 
-weak (49%) and in the best-regulated, most open markets (57%), against 37% in between. What 
-matters is who selects the projects.
+**2. Development risk depends on how projects are selected.** Projects that have a buyer
+when they are announced get built: gas plants bought by Gulf state utilities (6% abandoned)
+and solar tendered by the state in Saudi Arabia (3%) and Qatar (1%). Giant projects
+announced without a buyer, often tied to green hydrogen, are frequently abandoned. Better
+regulation does not mean less abandonment: the best-regulated, most open markets, such as
+the United Kingdom (64%) or Australia (79%), have among the highest rates, because many
+developers compete there and carry the early risk themselves.
 
 ![Abandonment rates by country](figures/rates_by_country.png)
 
 ![Regulatory quality](figures/rates_vs_regulation.png)
 
-**3. The developer matters less than the market.** Gulf developers abandoned none of their
-projects at home, but 34% abroad, close to their Western and Asian peers (40%). In a
+**3. The developer matters less than the market.** Gulf developers abandoned none of the
+projects attributed to them at home, but 34% abroad, close to their Western and Asian peers (40%). In a
 logistic regression controlling for technology, size and location, having a large
 international sponsor does not change the odds of abandonment.
 
@@ -57,8 +55,8 @@ international sponsor does not change the odds of abandonment.
 
 **What it means for infrastructure investors.** A pipeline must be valued market by market;
 a developer's record in a protected home market does not transfer abroad; and acquirers of
-operating assets (Brookfield, TAQA) avoid most development risk, which is the trade-off
-between core and value-add infrastructure strategies.
+operating assets avoid most development risk, which is the trade-off between core and
+value-add infrastructure strategies.
 
 ![Developers and acquirers](figures/sponsor_models.png)
 
@@ -71,17 +69,18 @@ between core and value-add infrastructure strategies.
 | [Global Integrated Power Tracker](https://globalenergymonitor.org/projects/global-integrated-power-tracker/), Global Energy Monitor, September 2026 | 183,404 power units: technology, capacity, status, start year, owners, location | Distributed through a download form, so it cannot be fetched by code from the source. We mirror the raw file, unchanged, at a public URL on SSP Cloud storage (licence CC BY 4.0); the code downloads it |
 | [World Bank API](https://datahelpdesk.worldbank.org/knowledgebase/articles/889392) | Income group, GDP per capita, Regulatory Quality (Worldwide Governance Indicators) | Queried by `src/worldbank.py`; a snapshot is saved in `data/worldbank_snapshot.csv` in case the API is down |
 | [ISO country codes](https://github.com/datasets/country-codes) | Country names and ISO codes, to join the two sources | Read from a public URL |
-| `data/sponsors.csv` | 30 sponsor groups: name patterns, home country | Built by hand |
+| `data/sponsors.csv` | 29 sponsor groups: name patterns, home country | Built by hand |
 
 ## Method
 
 1. **Cleaning** (`src/clean.py`): select and rename columns; group the ten GEM statuses
    into four stages (pipeline, construction, operating, abandoned); add ISO codes;
    extract owners and ownership shares from text fields with regular expressions; group
-   subsidiaries under 30 sponsor groups.
+   subsidiaries under 29 sponsor groups.
 2. **Indicator** (`src/indicators.py`): the abandonment rate, weighted by capacity:
    abandoned MW / (abandoned MW + MW under construction or commissioned since 2010).
-   Robustness checks with a 2015 cut-off and without inferred statuses.
+   Robustness checks without inferred statuses, without projects under construction, and
+   on solar and wind only.
 3. **Descriptive analysis and maps** (`src/plots.py`) by technology, country and sponsor.
 4. **Logistic regression** (`src/model.py`) of abandonment on technology, size, country
    characteristics and sponsor type, with standard errors clustered by country.
@@ -90,6 +89,8 @@ between core and value-add infrastructure strategies.
 
 - The tracker is a snapshot with no announcement dates: we cannot follow cohorts of
   projects over time.
+- Abandoned projects are not dated, so old cancellations are compared with recent
+  constructions; solar and wind, recent on both sides, give the cleanest comparison.
 - Projects enter the data at different stages depending on the market (permit
   applications in open markets, awarded tenders in the Gulf), which partly explains the
   low rates of tender-based markets.
