@@ -19,11 +19,10 @@ Iberdrola,Iberdrola|Neoenergia,Spain,Global peer,"Utility; includes Neoenergia, 
 Ørsted,Ørsted|Orsted,Denmark,Global peer,Offshore wind developer
 EDP,EDP Renov|Energias de Portugal|^EDP,Portugal,Global peer,Utility
 RWE,^RWE,Germany,Global peer,Utility
-Brookfield,Brookfield,Canada,Global peer,Infrastructure investor
+Brookfield,Brookfield|^Neoen(?!erg),Canada,Global peer,"Infrastructure investor; includes Neoen (France), acquired by Brookfield in 2024-2025"
 Macquarie,Macquarie,Australia,Global peer,Infrastructure investor
 Scatec,Scatec,Norway,Global peer,Renewable developer focused on emerging markets
 Voltalia,Voltalia,France,Global peer,Renewable developer
-Neoen,^Neoen(?!erg),France,Global peer,Renewable developer
 Marubeni,Marubeni,Japan,Global peer,Trading house
 Mitsui,^Mitsui & Co,Japan,Global peer,Trading house (Mitsui & Co only; Mitsui Fudosan and Sumitomo Mitsui banks are separate groups)
 Sumitomo,^Sumitomo Corp,Japan,Global peer,"Trading house (Sumitomo Corporation only, not other Sumitomo companies)"
