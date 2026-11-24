@@ -132,6 +132,9 @@ Then open `main.ipynb` and run all cells. The first run downloads the raw data (
 into `data/raw/` and caches it as Parquet in `data/cache/` (about one minute); later runs
 take a few seconds. To work offline, place the Excel file in `data/raw/` yourself.
 
+To obtain the file from the original source, fill in the download form on the Global Energy 
+Monitor download page, choose the September 2026 release, and place the file in data/raw/.
+
 The interactive maps are rendered when the notebook is run; they are not displayed in
 GitHub's static preview.
 
