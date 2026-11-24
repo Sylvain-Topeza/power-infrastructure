@@ -47,7 +47,7 @@ developers compete there and carry the early risk themselves.
 **3. The developer matters less than the market.** Gulf developers abandoned none of the
 projects attributed to them at home, but 34% abroad, close to their Western and Asian peers (40%). In a
 logistic regression controlling for technology, size and location, having a large
-international sponsor does not change the odds of abandonment.
+international sponsor does not significantly change the odds of abandonment.
 
 ![Home vs abroad](figures/home_vs_abroad.png)
 
